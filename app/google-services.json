@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "150037631147",
+    "firebase_url": "https://triptravelplanning-236c7.firebaseio.com",
+    "project_id": "triptravelplanning-236c7",
+    "storage_bucket": "triptravelplanning-236c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150037631147:android:c38e4e93ca2381a1",
+        "android_client_info": {
+          "package_name": "com.sheta.android.apps.triptravelplanning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150037631147-ignssug54h6idp22uorg41hj5ev0f83c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sheta.android.apps.triptravelplanning",
+            "certificate_hash": "f6cfce796c8335a7fcd6942015255a12c38c5e69"
+          }
+        },
+        {
+          "client_id": "150037631147-10vn2qt39ouitrah3senvniopo4pgori.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZU8a1NLFu1o-QJnXIOLgRV-Yt0qjadJo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150037631147-10vn2qt39ouitrah3senvniopo4pgori.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

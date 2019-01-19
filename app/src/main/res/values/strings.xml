@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Trip Travel Planning</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="trips">Trips</string>
+    <string name="friends">Friends</string>
+    <string name="hint_trip_name">Trip name</string>
+    <string name="hint_trip_start_date">Start date</string>
+    <string name="hint_trip_end_date">End date</string>
+    <string name="hint_trip_location">Location</string>
+    <string name="hint_trip_invite_user">Invite friend</string>
+    <string name="create_new_trip">Create</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_news_feed">News feed</string>
+    <string name="nav_trips">Trips</string>
+    <string name="nav_friends">Friends</string>
+    <string name="nav_settings">settings</string>
+    <string name="nav_log_out">Logout</string>
+</resources>

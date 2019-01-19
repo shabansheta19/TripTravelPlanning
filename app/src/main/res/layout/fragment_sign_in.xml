@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sheta.android.apps.triptravelplanning.fragments.SignUpFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/headerLoginLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#6E2C90"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_register"
+                    android:background="@drawable/circle"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:tint="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="welcome"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="22dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/triangleLoginImageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/square"
+                android:layout_below="@+id/headerLoginLinearLayout"
+                android:layout_centerHorizontal="true"
+                android:rotation="45"
+                android:layout_marginTop="-10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/emailLoginLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/triangleLoginImageView"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/emailIconLoginImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#6E2C90"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_action_email"/>
+
+                <EditText
+                    android:id="@+id/emailLoginEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@+id/emailIconLoginImageView"
+                    android:layout_toRightOf="@+id/emailIconLoginImageView"
+                    android:background="@color/transparent"
+                    android:paddingLeft="20dp"
+                    android:hint="email"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/passwordLoginLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailLoginLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/passwordIconLoginImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#6E2C90"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_action_password"/>
+
+                <EditText
+                    android:id="@+id/passwordLoginEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@+id/passwordIconLoginImageView"
+                    android:layout_toRightOf="@+id/passwordIconLoginImageView"
+                    android:background="@color/transparent"
+                    android:paddingLeft="20dp"
+                    android:hint="password"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/signInButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordLoginLayout"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="snas-serif-medium"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:background="#6E2C90"/>
+
+            <LinearLayout
+                android:id="@+id/socialLoginLayout"
+                android:layout_below="@+id/signInButton"
+                android:background="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp">
+
+                <ImageButton
+                    android:id="@+id/facebookLoginButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_action_email"/>
+
+                <ImageButton
+                    android:id="@+id/gmailLoginButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_action_email"/>
+
+                <ImageButton
+                    android:id="@+id/twitterLoginButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_action_email"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/moveToSignUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/socialLoginLayout"
+                android:background="@color/transparent"
+                android:text="Not a member? Register Here"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

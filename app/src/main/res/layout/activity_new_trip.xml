@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_trip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sheta.android.apps.triptravelplanning.activities.NewTripActivity">
+
+    <LinearLayout
+        android:id="@+id/headerLinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#6E2C90"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_register"
+            android:background="@drawable/circle"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:tint="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Trip"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/triangleImageView2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/square"
+        android:layout_below="@+id/headerLinearLayout2"
+        android:layout_centerHorizontal="true"
+        android:rotation="45"
+        android:layout_marginTop="-10dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/trip_name_layout"
+        android:layout_below="@+id/triangleImageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/trip_name_editTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColorHint="@color/colorPrimary"
+            android:hint="@string/hint_trip_name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/trip_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trip_name_layout"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/trip_start_date_editTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="@string/hint_trip_start_date" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/trip_end_date_editTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="@string/hint_trip_end_date" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/trip_location_layout"
+        android:layout_below="@+id/trip_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/trip_location_editTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="@string/hint_trip_location" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/invite_friend_layout"
+        android:layout_below="@+id/trip_location_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/trip_invite_friend_editTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="@string/hint_trip_invite_user" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/invite_friend_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_add_user"
+            android:background="#6E2C90"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_new_trip_button"
+        android:layout_below="@+id/invite_friend_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#6E2C90"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:text="@string/create_new_trip"/>
+
+</RelativeLayout>
